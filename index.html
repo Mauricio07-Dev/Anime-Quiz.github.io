@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎌 Anime Quiz Challenge</title>
+    <link rel="icon" href="assets/images/icono.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>⚡️ Anime Quiz Challenge 🎵</h1>
+        <div class="progress-container">
+            <div class="progress-bar" id="progress"></div>
+            <span id="level">Nivel 1/15</span>
+        </div>
+        <div class="timer-container">
+            <div class="timer-bar" id="timer"></div>
+            <span id="time-left">10</span>s
+        </div>
+        <div class="question-container" id="question">
+            <!-- Pregunta cargada por JS -->
+        </div>
+        <div class="options-container" id="options">
+            <!-- Opciones cargadas por JS -->
+        </div>
+        <div class="feedback" id="feedback"></div>
+        <button id="restart-btn" style="display: none;">🔄 Volver a jugar</button>
+        <audio id="correct-sound" src="assets/sounds/correcto.mp3"></audio>
+        <audio id="wrong-sound" src="assets/sounds/incorrecto.mp3"></audio>
+        <audio id="bg-music" loop src="assets/sounds/Pokke Village Theme.mp3"></audio>
+        <button id="music-toggle">🔊 Música: ON</button>
+    </div>
+    <footer>
+        <p>Creado por Mauricio_Dev</p>
+        <div class="social-links">
+            <a href="https://x.com/MauricioJe69094?t=MpD2SlhBEz1rEmbPRfj69g&s=09" target="_blank">📱 X</a>
+            <a href="https://github.com/Mauricio07-Dev" target="_blank">💻 GitHub</a>
+            <a href="https://youtube.com/@mau_07_gamer?si=zscwKHiQjP7KZZ4F" target="_blank">📱 YouTube</a>
+            <a href="https://www.instagram.com/mauricio_dev07?igsh=ZjJscW45YnF3cGUz" target="_blank">📱 Instagram</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

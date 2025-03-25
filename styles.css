@@ -1,0 +1,140 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('assets/images/Fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-container {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 20px #ff00ff;
+}
+
+h1 {
+    color: #ff69b4;
+    text-shadow: 0 0 5px #fff;
+}
+
+.progress-container {
+    margin: 20px 0;
+}
+
+.progress-bar {
+    height: 10px;
+    background: #333;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#progress {
+    height: 100%;
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    border-radius: 5px;
+    width: 0%;
+    transition: width 0.5s;
+}
+
+.timer-container {
+    margin: 15px 0;
+    background: #333;
+    border-radius: 5px;
+    height: 10px;
+    position: relative;
+}
+
+.timer-bar {
+    height: 100%;
+    background: #00ff00;
+    border-radius: 5px;
+    width: 100%;
+    transition: width 1s linear, background 0.5s;
+}
+
+#time-left {
+    font-weight: bold;
+}
+
+.question-container {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.options-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+button {
+    background: #4b0082;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #9400d3;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00ffff;
+}
+
+#music-toggle {
+    margin-top: 10px;
+    background: #333;
+}
+
+#restart-btn {
+    background: #ff4500;
+    margin-top: 20px;
+    display: none;
+}
+
+#restart-btn:hover {
+    background: #ff6347;
+    transform: scale(1.05);
+}
+
+.feedback {
+    margin: 15px 0;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+.correct {
+    color: #00ff00;
+}
+
+.incorrect {
+    color: #ff0000;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+.social-links a {
+    color: #00ffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
